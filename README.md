@@ -1,4 +1,4 @@
-# 项目代号：Ant
+# 项目代号：yunAnt
 ============
 ###项目介绍：
 * 项目代号取自蚂蚁搬家之意，主要是用来收集和管理各家云服务器，方便做CMDB。
@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
 ###Ant项目代码:
 
-* https://github.com/djshell/ant
+* https://github.com/djshell/yunAnt
 
 
 

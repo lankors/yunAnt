@@ -63,10 +63,5 @@ if __name__ == '__main__':
 
 
 
-###Ant项目代码:
-
-* https://github.com/djshell/ant
-
-
 
 
