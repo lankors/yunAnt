@@ -41,7 +41,7 @@ def run(yun_name):
 
 if __name__ == '__main__':
 
-    # ,'amazon','qcloud','ucloud','qingcloud'
+    # 'aliyun','amazon','qcloud','ucloud','qingcloud'
     yun_list = ['aliyun']
     for yun in yun_list:
         run(yun)
