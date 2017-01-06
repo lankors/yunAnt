@@ -1,4 +1,4 @@
-# 项目代号：Ant
+# 项目代号：yunAnt
 ============
 ###项目介绍：
 * 项目代号取自蚂蚁搬家之意，主要是用来收集和管理各家云服务器，方便做CMDB。
@@ -10,6 +10,35 @@
 ###安装方式
     依赖 qingcloud-sdk 、boto
     pip2.7 install yunAnt
+
+###配置项 /etc/yun_config
+
+    [aliyun]
+    url = https://ecs.aliyuncs.com
+    id  = xxxxxx
+    key = xxxxxx
+    slburl = https://slb.aliyuncs.com
+
+    [ucloud]
+    url = http://api.ucloud.cn
+    id  = xxxxxx
+    key = xxxxxx
+
+    [amazon]
+    url = http://api.ucloud.cn
+    id  = xxxxxx
+    key = xxxxxx
+
+    [qcloud]
+    url = api.qcloud.com
+    id  = xxxxxx
+    key = xxxxxx
+
+    [qingcloud]
+    id = xxxxxx
+    key = xxxxxx
+
+
 
 ###用法参考
 
@@ -62,6 +91,42 @@ if __name__ == '__main__':
 ```
 
 
+### 输出格式
+    区域格式:
+    {'prefix': u'pek1', 'name': u'pek1'}
+
+    服务器格式:
+     [
+      {'hostname': 'codis_test1',
+      'inner_ip': '10.10.10.76',
+      'is_del': 0,
+      'os': 'centos65x64d',
+      'outer_ip': '114.114.114.114',
+      'purchase_date': '2016-10-11 07:14:55',
+      'wxsn': 'i-ipzzr9sr'},
+      {'hostname': 'codis_test1',
+      'inner_ip': '10.10.10.76',
+      'is_del': 0,
+      'os': 'centos65x64d',
+      'outer_ip': '114.114.114.114',
+      'purchase_date': '2016-10-11 07:14:55',
+      'wxsn': 'i-ipzzr9sr'}
+      ]
+
+    负载格式:
+
+    [
+     {'children': u'i-tw6ksevg,i-z76mpmku',
+      'hostname': 'xxx_lb',
+      'outer_ip': '114.114.114.114',
+      'wxsn': 'lb-ypysddsm'},
+     {'children': u'i-uqylknbc,i-1wtbms18',
+      'hostname': 'xxx_lb',
+      'outer_ip': '114.114.114.115',
+      'wxsn': 'lb-thvj2bhc'}
+      ]
 
 
+###Ant项目代码:
 
+* https://github.com/djshell/yunAnt
