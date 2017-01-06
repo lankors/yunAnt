@@ -1,0 +1,24 @@
+[aliyun]
+url = https://ecs.aliyuncs.com
+id  = xxxxxx
+key = xxxxxx
+slburl = https://slb.aliyuncs.com
+
+[ucloud]
+url = http://api.ucloud.cn
+id  = xxxxxx
+key = xxxxxx
+
+[amazon]
+url = http://api.ucloud.cn
+id  = xxxxxx
+key = xxxxxx
+
+[qcloud]
+url = api.qcloud.com
+id  = xxxxxx
+key = xxxxxx
+
+[qingcloud]
+id = xxxxxx
+key = xxxxxx

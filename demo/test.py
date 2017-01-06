@@ -6,6 +6,11 @@ import os
 from  ant.yun.api import api
 from pprint import  pprint
 
+
+"""
+需要把yun_config放到/etc下
+"""
+
 def run(yun_name):
 
     #查询云的Region
@@ -20,7 +25,7 @@ def run(yun_name):
         data =  t.get_result()
         #直接打印个数
         pprint(len(data))
-        #pprint(data)
+        pprint(data)
 
     print("="*50)
     # 查询Region中负载信息
@@ -31,7 +36,7 @@ def run(yun_name):
         data =  t.get_result()
         # 直接打印个数
         pprint(len(data))
-        # pprint(data)
+        pprint(data)
 
 
 
@@ -39,7 +44,7 @@ def run(yun_name):
 if __name__ == '__main__':
     
     #'aliyun','amazon','qcloud','ucloud','qingcloud'
-    yun_list = ['aliyun']
+    yun_list = ['qingcloud']
     for yun in yun_list:
          
         run(yun)

@@ -33,7 +33,7 @@ with open('LICENSE') as fp:
 setup(
 
     name = 'yunAnt',
-    version = '1.2.8',
+    version = '1.3.0',
     keywords = ('yunAnt', 'aliyun','amazon','ucloud','qcloud','qingcloud'),
     description = 'rebot aliyun、amazon、ucloud、qcloud、qingcloud Cloud server information',
     long_description = readme,
